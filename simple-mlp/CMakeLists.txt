@@ -1,6 +1,9 @@
-cmake_minimum_required(VERSION 3.15)
+cmake_minimum_required(VERSION 3.29)
 
-project(mlp_mlpack)
+project(mlp_mlpack
+        LANGUAGES CXX
+        VERSION 0.1
+        DESCRIPTION "Example project using mlpack")   
 
 set(CMAKE_CXX_STANDARD 17)
 

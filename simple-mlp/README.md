@@ -25,3 +25,17 @@ build\Debug\mlp_mlpack.exe
 
 
 ```
+
+## Usando Docker
+
+```bash
+docker build -t simple-mlp/run .
+
+docker build --target build -t simple-mlp/build .
+docker build -t simple-mlp/run .
+
+docker run -d --rm -p 8080:8080 --name simple-mlp simple-mlp/run
+
+docker exec -it simple-mlp /bin/bash
+docker stop simple-mlp
+```
